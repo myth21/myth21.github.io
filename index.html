@@ -1,37 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <link rel="stylesheet" href="/styles.css?sdad=12">
+    <title>Backend-разработчик (PHP, Go, Python) | Малухин Иван</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
 
-    <div id="header"></div>
+<header>
+    <nav class="header_nav">
+        <a href="/" title="На главную" class="header_nav_a">
+            <img src="/assets/icons/home.svg" alt="Home" width="32" height="32">
+        </a>
+        <div class="social-links">
+            <a href="https://wa.me/79539210007" title="Написать в WhatsApp" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/icons/whatsapp-inverted.svg" alt="WhatsApp" width="32" height="32">
+            </a>
+            <a href="https://t.me/WebDeveloperGroup" title="Написать в Telegram" target="_blank"
+               rel="noopener noreferrer">
+                <img src="/assets/icons/telegram.svg" alt="Telegram" width="32" height="32">
+            </a>
+            <a href="https://github.com/myth21" title="Профиль на GitHub" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/icons/github.svg" alt="GitHub" width="32" height="32">
+            </a>
+        </div>
 
-    <main class="container">
-        <h1>PHP Developer Page</h1>
+        <div class="email-contact">
+            <span>malukhin.ivan@gmail.com</span>
+            <button
+                    type="button"
+                    class="copy-email"
+                    aria-label="Скопировать email"
+                    title="Скопировать email"
+                    data-email="malukhin.ivan@gmail.com"
+            >
+                <img src="/assets/icons/copy-white.svg" alt="" width="20" height="20">
+            </button>
+        </div>
+    </nav>
+</header>
 
-        <p>
-            I am ...
+<main class="container">
+    <h1>Backend-разработчик</h1>
+    <div class="profile">
+        <img src="/assets/img/ivan-on-it-gorod.jpg" alt="PHP Developer - Ivan Malukhin" class="profile-photo">
+        <p class="profile-text" id="profile-text">
+            Backend-разработчик на PHP с опытом более шести лет, дополнительно - Go и Python для сервисных задач.
+            Проектирую архитектуру и развиваю backend-сервисы, принимаю технические решения с учётом требований проекта,
+            масштабируемости и сопровождаемости кода.
+            Разрабатываю интеграции с ERP и внешними API, поиск на Elasticsearch, асинхронную обработку через RabbitMQ и
+            Kafka.
+            Работаю с реляционными и NoSQL базами данных.
+            Самостоятельно веду задачи от анализа требований и проектирования API до реализации, тестирования и
+            внедрения.
+            Участвую в выборе архитектурных подходов, декомпозиции и определении границ модулей.
+            Работаю с Docker и CI/CD.
+            Развиваю собственные open-source проекты на PHP, Go и Python.
+            Английский - B2.
+            <!--
+            T-shaped специалист: основная экспертиза сосредоточена на Backend-разработке, но также имею практический опыт во Frontend и DevOps.
+            Быстро осваиваю новые технологии и инструменты, умею адаптироваться к незнакомым задачам и при необходимости переключать фокус на смежные направления.
+            -->
         </p>
+    </div>
 
-        <h2>My some experience</h2>
-
-        <ul >
-            <li><a href="/case/case1.html" >Case 1</a></li>
-            <li><a href="/case/case2.html" >Case 2</a></li>
+    <h2>Стэк</h2>
+    <div id="stack">
+        <ul>
+            <li><span class="stack-label">Языки:</span> PHP, SQL, JavaScript, Go, Python</li>
+            <li><span class="stack-label">Фреймворки:</span> Laravel, Symfony, Yii2, AngularJS</li>
+            <li><span class="stack-label">Базы данных:</span> MySQL, PostgreSQL, IBM DB2, MongoDB, Redis</li>
+            <li><span class="stack-label">Поиск и очереди:</span> Elasticsearch, RabbitMQ, Kafka</li>
+            <li><span class="stack-label">Инфраструктура:</span> Linux, Nginx, Docker, GitLab CI/CD, Grafana</li>
+            <li><span class="stack-label">API и интеграции:</span> REST, Swagger/OpenAPI, ERP, PandaDoc, платёжные шлюзы
+            </li>
+            <li><span class="stack-label">Практики:</span> DDD, SDD, SOLID, PHPUnit, интеграционные тесты, Git</li>
         </ul>
+    </div>
 
-    </main>
+    <h2>Кейсы</h2>
+    <ul class="case-list">
+        <li>
+            <a href="/case/additonal-for-ya-tracker-service.html">Сервис-дополнение к Яндекс Трекеру</a>
+        </li>
+        <li>
+            <a href="/case/calssificator-for-internet-apteki.html">Классификатор для интернет-аптеки</a>
+        </li>
+    </ul>
+</main>
 
-    <div id="footer" class="footer"></div>
+<footer>
+    <nav aria-label="Контакты">
+        <div class="social-links">
+            <a href="/" title="На главную">
+                <img src="/assets/icons/home-black.svg" alt="Home" width="32" height="32">
+            </a>
+            <a href="https://wa.me/79539210007" title="Написать в WhatsApp" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/icons/whatsapp-inverted.svg" alt="WhatsApp" width="32" height="32">
+            </a>
+            <a href="https://t.me/WebDeveloperGroup" title="Написать в Telegram" target="_blank"
+               rel="noopener noreferrer">
+                <img src="/assets/icons/telegram.svg" alt="Telegram" width="32" height="32">
+            </a>
+            <a href="https://github.com/myth21" title="Профиль на GitHub" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/icons/github.svg" alt="GitHub" width="32" height="32">
+            </a>
+        </div>
 
-    <script src="/script.js"></script>
+        <div class="email-contact">
+            <span>malukhin.ivan@gmail.com</span>
+            <button
+                    type="button"
+                    class="copy-email"
+                    aria-label="Скопировать email"
+                    title="Скопировать email"
+                    data-email="malukhin.ivan@gmail.com"
+            >
+                <img src="/assets/icons/copy.svg" alt="" width="20" height="20">
+            </button>
+        </div>
+    </nav>
+</footer>
+
+<script src="/assets/js/script.js"></script>
 </body>
 </html>
-
-
-
-

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Классификатор для интернет-аптеки</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="header_nav">
+            <a href="/" title="На главную" class="header_nav_a">
+                <img src="/assets/icons/home.svg" alt="Home" width="32" height="32">
+            </a>
+            <div class="social-links">
+                <a href="https://wa.me/79539210007" title="Написать в WhatsApp" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/icons/whatsapp-inverted.svg" alt="WhatsApp" width="32" height="32">
+                </a>
+                <a href="https://t.me/WebDeveloperGroup" title="Написать в Telegram" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/icons/telegram.svg" alt="Telegram" width="32" height="32">
+                </a>
+                <a href="https://github.com/myth21" title="Профиль на GitHub" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/icons/github.svg" alt="GitHub" width="32" height="32">
+                </a>
+            </div>
+
+            <div class="email-contact">
+                <span>malukhin.ivan@gmail.com</span>
+                <button
+                        type="button"
+                        class="copy-email"
+                        aria-label="Скопировать email"
+                        title="Скопировать email"
+                        data-email="malukhin.ivan@gmail.com"
+                >
+                    <img src="/assets/icons/copy-white.svg" alt="" width="20" height="20">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+<article>
+    <h1>Классификатор для интернет-аптеки</h1>
+    <p>Для интернет-аптеки требовалась иерархическая система классификации товаров с возможностью быстрого поиска и фильтрации. При этом большое дерево категорий и требования к производительности ограничивали применение подходов, основанных на сложных JOIN-запросах.</p>
+
+    <p>Спроектировал структуру хранения дерева на основе Materialized Path. Реализовал CRUD-операции для управления категориями и оптимизировал выборки для навигации и фильтрации товаров.</p>
+
+    <p>Дополнительно подготовил документацию, описывающую особенности реализации и ограничения выбранного подхода.</p>
+
+    <p>В результате получилась система классификации с упрощённой логикой выборок и предсказуемой производительностью без необходимости рекурсивных запросов.</p>
+</article>
+
+    </main>
+
+    <footer>
+        <nav aria-label="Контакты">
+            <div class="social-links">
+                <a href="/" title="На главную">
+                    <img src="/assets/icons/home-black.svg" alt="Home" width="32" height="32">
+                </a>
+                <a href="https://wa.me/79539210007" title="Написать в WhatsApp" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/icons/whatsapp-inverted.svg" alt="WhatsApp" width="32" height="32">
+                </a>
+                <a href="https://t.me/WebDeveloperGroup" title="Написать в Telegram" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/icons/telegram.svg" alt="Telegram" width="32" height="32">
+                </a>
+                <a href="https://github.com/myth21" title="Профиль на GitHub" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/icons/github.svg" alt="GitHub" width="32" height="32">
+                </a>
+            </div>
+
+            <div class="email-contact">
+                <span>malukhin.ivan@gmail.com</span>
+                <button
+                        type="button"
+                        class="copy-email"
+                        aria-label="Скопировать email"
+                        title="Скопировать email"
+                        data-email="malukhin.ivan@gmail.com"
+                >
+                    <img src="/assets/icons/copy.svg" alt="" width="20" height="20">
+                </button>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
